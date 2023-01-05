@@ -1,0 +1,42 @@
+#about {
+    padding: 30px 15px;
+    .container {
+        flex-direction: row-reverse;
+    }
+    .img-container {
+        width: 300px;
+        height: 300px;
+        position: relative;
+
+        .circles{
+            background: $about-img-circles;
+            @include img-style;
+        }
+        .img-2{
+            background: $about-img; 
+           @include img-style;
+            position: absolute;
+            top: 40px;
+            
+        }
+    }
+    
+}
+
+#about ul {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 15px;
+
+    &:first-of-type {
+        margin-right: 15px;
+    }
+
+    li {
+        font-weight: 600;
+
+        span {
+            color: $orange;
+        }
+    } 
+} 
